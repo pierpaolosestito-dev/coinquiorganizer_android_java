@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_of_ui"
+    tools:context=".RegistrationFormActivityTwo">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="Registra la tua casa:"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <LinearLayout
+        android:layout_width="371dp"
+        android:layout_height="458dp"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="35dp">
+
+            <CheckBox
+                android:id="@+id/formTwo_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Voglio usare WhatsApp"
+                android:textColor="@color/black"
+                ></CheckBox>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="35dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/whatsapp_icon"></ImageView>
+
+            <EditText
+                android:id="@+id/formTwo_wAppGroupID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/white"
+                android:hint="GroupID WhatsApp:"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/question"></ImageView>
+
+            <EditText
+                android:id="@+id/formTwo_domandaRecuperoPW"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/white"
+                android:hint="Domanda per recupero password:"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/lock2"></ImageView>
+
+            <EditText
+                android:id="@+id/formTwo_rispostaRecuperoPW"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/white"
+                android:hint="Inserisci una risposta:"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"></EditText>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/formTwo_button_nextstep"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#ef6330"
+            android:onClick="checkFieldnGoToThirdStep"
+            android:text="PROSSIMO PASSO"
+            android:textColor="@android:color/black"></Button>
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/challengenresponse"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+    </ImageView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

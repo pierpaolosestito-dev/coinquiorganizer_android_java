@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/toDoInputDialogImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/ic_baseline_add_circle_24"
+        android:layout_marginLeft="140sp"/>
+
+    <EditText
+        android:id="@+id/edit_titoloAttivita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Attività:"
+        android:inputType="text"
+        android:layout_below="@+id/toDoInputDialogImage"/>
+    <EditText
+        android:id="@+id/edit_descrizioneAttivita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descrizione o sotto-attività:"
+        android:inputType="text"
+        android:layout_below="@id/edit_titoloAttivita"
+        android:layout_alignParentStart="true"/>
+    <CheckBox
+        android:id="@+id/importantCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_descrizioneAttivita"
+        android:text="Attività da fissare in alto?"/>
+
+
+
+
+</RelativeLayout>

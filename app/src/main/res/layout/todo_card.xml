@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="2dp"
+            android:id="@+id/toDoViewCard"/>
+
+        <TextView
+            android:id="@+id/toDoHeaderCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Line 1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#ef6330"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/toDoViewCard"/>
+
+        <TextView
+            android:id="@+id/toDoBodyCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewCard"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-19dp"
+            android:layout_toEndOf="@+id/toDoViewCard"
+            android:textColor="@android:color/white"
+            android:text="Line 2"
+            android:textSize="15sp" />
+        <ImageView
+            android:id="@+id/checkToDoImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@+id/openInfoToDo"
+
+            />
+
+
+        <ImageView
+            android:id="@+id/openInfoToDo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_orange_eye"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

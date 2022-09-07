@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_of_ui">
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="216dp"
+        android:layout_height="63dp"
+        android:backgroundTint="#007fff"
+        android:text="Entra in casa tua!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.637" />
+
+    <ImageView
+        android:id="@+id/logoView"
+        android:layout_width="400dp"
+        android:layout_height="350dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/loginButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.901"
+        ></ImageView>
+
+    <Button
+        android:id="@+id/registraButton"
+        android:layout_width="211dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="#007fff"
+        android:text="Crea la tua casa!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
+    <Button
+        android:id="@+id/chisiamoButton"
+        android:layout_width="211dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="#007fff"
+        android:onClick="contact_me"
+        android:text="Contattami"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registraButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

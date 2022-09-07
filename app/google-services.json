@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "945622272121",
+    "project_id": "coinquiorganizer",
+    "storage_bucket": "coinquiorganizer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:945622272121:android:2cac3a06ef9f4dd3d96ca8",
+        "android_client_info": {
+          "package_name": "firstexample.helloworld"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "945622272121-m0b3j5nj0l1va451p0r8i39fn3hjre2f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJHYXwKNTbQ4yaQXlhfO2WpfjCjWVZ0bU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "945622272121-m0b3j5nj0l1va451p0r8i39fn3hjre2f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

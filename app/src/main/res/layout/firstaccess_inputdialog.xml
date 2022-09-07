@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/firstaccessdialog"
+        android:layout_marginLeft="120dp"
+        ></ImageView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/user2"></ImageView>
+
+        <EditText
+            android:id="@+id/firstAccess_cambioUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:hint="Username"
+
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            ></EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/lock2"></ImageView>
+
+        <EditText
+            android:id="@+id/firstAccess_cambioPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:hint="Password"
+            android:password="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            ></EditText>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/question"></ImageView>
+
+        <TextView
+            android:id="@+id/firstAccess_domandaCasa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            ></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_question_answer_24"></ImageView>
+
+        <EditText
+            android:id="@+id/firstAccess_rispostaPersonale"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:backgroundTint="@android:color/white"
+            android:hint="Inserisci la tua risposta personale: non la deve sapere nessuno, potrebbe tornarti utile per recuperare la password!"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            ></EditText>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
